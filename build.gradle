@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+    id 'org.springframework.boot' version '2.2.4.RELEASE'
+}
+
+group = 'org.jodconverter'
+description = 'JODConverter - Nabeel'
+
+ext {
+    jodConverterVersion = '4.2.4'
+    springBootVersion = '2.2.4.RELEASE'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation "org.springframework.boot:spring-boot-starter:$springBootVersion"
+
+    implementation "org.jodconverter:jodconverter-local:$jodConverterVersion"
+    implementation "org.jodconverter:jodconverter-spring-boot-starter:$jodConverterVersion"
+}
