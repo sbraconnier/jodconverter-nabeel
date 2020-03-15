@@ -7,7 +7,7 @@ group = 'org.jodconverter'
 description = 'JODConverter - Nabeel'
 
 ext {
-    jodConverterVersion = '4.2.4'
+    jodConverterVersion = '4.3.1-SNAPSHOT'
     springBootVersion = '2.2.4.RELEASE'
 }
 
@@ -18,6 +18,12 @@ java {
 
 repositories {
     mavenCentral()
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots"
+        mavenContent {
+            snapshotsOnly()
+        }
+    }
 }
 
 dependencies {

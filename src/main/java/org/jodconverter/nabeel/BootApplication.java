@@ -10,7 +10,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.util.ResourceUtils;
 
-import org.jodconverter.DocumentConverter;
+import org.jodconverter.core.DocumentConverter;
 
 /**
  * Main application.
